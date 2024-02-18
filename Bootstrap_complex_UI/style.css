@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Utility components starts here*/
+.top{
+    padding-top: 50px;
+}
+
+
+/* Header Css starts here*/
+.navbar-toggler-icon{
+    width: 30px;
+    height: 30px;
+}
+.navbar-brand button{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Carousel Css start here*/
+.carousel img{
+    display: inline-block;
+    width: 100vw;
+    height: 115vh;
+    filter: brightness(60%);
+}
+@media screen and (max-width: 435px){
+    .carousel img{
+        display: inline-block;
+        width: 100vw;
+        height: 50vh;
+        filter: brightness(60%);
+    }
+}
+
+
+/*Under_hero Css starts here*/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    width: 100vw;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.main img{
+    width: 366px;
+    height: 200px;
+    display: block;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 550px){
+    .main img{
+        width: 300px;
+        height: 170px;
+        display: block;
+    }
+}
+@media screen and (max-width: 550px){
+    .main img{
+        width: 250px;
+        height: 130px;
+        display: block;
+    }
+}
+
+
+/*Gallary Css starts here*/
+.gallary{
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 13.5% 14% 14% 14% 14% 13.5%;
+    grid-template-rows: 24% 24% 24% 24%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.box1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("img/img\ 1.jpg");
+    background-size: cover;
+
+}
+.box2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url("img/img\ 2.jpg");
+    background-size: cover;
+}
+.box3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-image: url("img/img\ 3.jpg");
+    background-size: cover;
+}
+.box4{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    background-image: url("img/img\ 3.webp");
+    background-size: cover;
+}
+.box6{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("img/img\ 3.webp");
+    background-size: cover;
+}
+.box5{
+    background-image: url("img/img\ 1.jpg");
+    background-size: cover;
+}
+.box7{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-image: url("img/img\ 3.jpg");
+    background-size: cover;
+}
+.box8{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url("img/img\ 3.webp");
+    background-size: cover;
+}
+.box9{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("img/img\ 3.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 768px){
+    .gallary{
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 450px){
+    .gallary{
+        height: 40vh;
+    }
+}
+
+
+/*Card section Css starts here*/
+.main-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+@media screen and (max-width: 765px){
+    .main-content{
+        flex-wrap: wrap;
+    } 
+}
+
+
+/*Footer Css starts here*/
+.footer_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px; 
+    gap: 20px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+}
+.footer_copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 430px){
+    p{
+        font-size: 15px;
+    }
+    .footer_main{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 520px){
+    .footer_copyright{
+        width: 100%;
+    }
+    .footer_copyright{
+        flex-direction: column;
+    }
+    .para{
+        align-self: flex-start;
+    }
+    .button{
+        align-self: flex-end;
+    }
+}
